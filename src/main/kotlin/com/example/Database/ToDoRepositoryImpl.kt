@@ -1,6 +1,6 @@
-package com.example.Repository
+package com.example.Database
 
-import com.example.Database.ToDoEntity
+import com.example.Repository.ToDoRepository
 import com.example.entities.ToDo
 import com.example.entities.ToDoRequest
 import org.jetbrains.exposed.sql.*
