@@ -4,9 +4,9 @@ import com.example.entities.ToDo
 import com.example.entities.ToDoRequest
 
 interface ToDoRepository {
-    fun getAllTasks(): List<ToDo>
-    fun updateTask(id: Int, title: String, isDone: Boolean): ToDo
-    fun getTaskById(id: Int): ToDo?
-    fun createTask(todo: ToDoRequest): ToDo
-    fun deleteTask(id: Int)
+    suspend fun getAllTasks(): List<ToDo>
+    suspend fun updateTask(id: Int, title: String, isDone: Boolean): ToDo
+    suspend fun getTaskById(id: Int): ToDo?
+    suspend fun createTask(todo: ToDoRequest): ToDo
+    suspend fun deleteTask(id: Int)
 }
